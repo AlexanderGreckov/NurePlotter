@@ -21,7 +21,7 @@ def index(request: Request) -> Response:
     return templates.TemplateResponse("index.html", {"request": request})
 
 
-@router.post("/insert-points", status_code=201)
+@router.post("/insert-points", status_code=201, description="Insert a bunch of points into database")
 def insert_points(items: list[Point]) -> dict[str, str]:
     if items:
         db_insert_points(map(lambda item: PointDBO(**item.dict()), items))

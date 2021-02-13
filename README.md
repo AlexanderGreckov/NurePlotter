@@ -30,3 +30,16 @@ After startup application will be started on the [localhost:8000](http://localho
 ```shell
 uvicorn plotter.main:application
 ```
+
+## Project images
+
+### Index page
+![Index page image](docs/img/index.png)
+
+
+### Documentation page
+![Project documentation image](docs/img/docs.png)
+
+
+### Chart page
+![Chart page image](docs/img/chart.png)
